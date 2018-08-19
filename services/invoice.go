@@ -6,8 +6,10 @@ import (
 	"invoices/models/response"
 	"invoices/repositories"
 	"invoices/util/errors"
+	"invoices/util"
 
 	"log"
+
 	"github.com/mongodb/mongo-go-driver/bson/objectid"
 	"github.com/mongodb/mongo-go-driver/mongo"
 )
@@ -107,16 +109,30 @@ func (this *InvoiceService) List(request *mrequest.ListRequest) (*mresponse.Invo
 		return nil, e
 	}
 
-	docs := []*mresponse.InvoiceRead{}
+	docs := []*mresponse.InvoiceSimple{}
 
 	for cursor.Next(context.Background()) {
-		doc := mresponse.InvoiceRead{}
-		if err := cursor.Decode(&doc); err != nil {
+		dbDoc := mresponse.InvoiceRead{}
+
+		if err := cursor.Decode(&dbDoc); err != nil {
 			errR := errors.HandleErrorResponse(errors.SERVICE_UNAVAILABLE, nil, err.Error())
 			return nil, errR
 		}
 
-		doc.ID = doc.IDdb.Hex()
+		doc := mresponse.InvoiceSimple{}
+
+		doc.ID = dbDoc.IDdb.Hex()
+
+		log.Printf(dbDoc.InvoiceDate)
+		date, err := util.Parse_YYYYMMDD_Date(dbDoc.InvoiceDate)
+		if err != nil { // send old date as error
+			date, _ = util.Parse_YYYYMMDD_Date("1900-01-01")
+		}
+		doc.InvoiceDate = date
+		doc.InvoiceNo = string(dbDoc.InvoiceNo)
+		doc.NetTotal = float64(dbDoc.DocumentTotals.NetTotal)
+		doc.TaxPayable = float64(dbDoc.DocumentTotals.TaxPayable)
+		doc.GrossTotal = float64(dbDoc.DocumentTotals.GrossTotal)
 
 		docs = append(docs, &doc)
 	}
