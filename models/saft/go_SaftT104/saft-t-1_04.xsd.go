@@ -722,19 +722,13 @@ func (me *XsdGoPkgHasElem_CountrysequenceAddressStructurePTschema_Country_XsdtSt
 }
 
 type TAddressStructurePT struct {
-	XsdGoPkgHasElem_CountrysequenceAddressStructurePTschema_Country_XsdtString_Pt
-
-	XsdGoPkgHasElem_BuildingNumber
-
-	XsdGoPkgHasElem_StreetName
-
-	XsdGoPkgHasElem_AddressDetail
-
-	XsdGoPkgHasElem_City
-
-	XsdGoPkgHasElem_PostalCodesequenceAddressStructurePTschema_PostalCode_TPostalCodePT_
-
-	XsdGoPkgHasElem_Region
+	XsdGoPkgHasElem_CountrysequenceAddressStructurePTschema_Country_XsdtString_Pt `bson:"inline"`
+	XsdGoPkgHasElem_BuildingNumber `bson:"inline"`
+	XsdGoPkgHasElem_StreetName `bson:"inline"`
+	XsdGoPkgHasElem_AddressDetail `bson:"inline"`
+	XsdGoPkgHasElem_City `bson:"inline"`
+	XsdGoPkgHasElem_PostalCodesequenceAddressStructurePTschema_PostalCode_TPostalCodePT_ `bson:"inline"`
+	XsdGoPkgHasElem_Region `bson:"inline"`
 }
 
 //	If the WalkHandlers.TAddressStructurePT function is not nil (ie. was set by outside code), calls it with this TAddressStructurePT instance as the single argument. Then calls the Walk() method on 7/7 embed(s) and 0/0 field(s) belonging to this TAddressStructurePT instance.
@@ -900,49 +894,28 @@ func (me *XsdGoPkgHasElem_Telephone) Walk() (err error) {
 }
 
 type TxsdHeader struct {
-	XsdGoPkgHasElem_AuditFileVersion
-
-	XsdGoPkgHasElem_TaxEntity
-
-	XsdGoPkgHasElem_HeaderComment
-
-	XsdGoPkgHasElem_Website
-
-	XsdGoPkgHasElem_Email
-
-	XsdGoPkgHasElem_ProductID
-
-	XsdGoPkgHasElem_Telephone
-
-	XsdGoPkgHasElem_Fax
-
-	XsdGoPkgHasElem_TaxRegistrationNumbersequenceTxsdHeaderHeaderschema_TaxRegistrationNumber_TSAFPTPortugueseVatNumber_
-
-	XsdGoPkgHasElem_BusinessName
-
-	XsdGoPkgHasElem_CompanyAddress
-
-	XsdGoPkgHasElem_CurrencyCodesequenceTxsdHeaderHeaderschema_CurrencyCode_XsdtString_Eur
-
-	XsdGoPkgHasElem_DateCreated
-
-	XsdGoPkgHasElem_EndDate
-
-	XsdGoPkgHasElem_ProductCompanyTaxID
-
-	XsdGoPkgHasElem_SoftwareCertificateNumber
-
-	XsdGoPkgHasElem_CompanyID
-
-	XsdGoPkgHasElem_TaxAccountingBasis
-
-	XsdGoPkgHasElem_CompanyName
-
-	XsdGoPkgHasElem_FiscalYear
-
-	XsdGoPkgHasElem_StartDate
-
-	XsdGoPkgHasElem_ProductVersion
+	XsdGoPkgHasElem_AuditFileVersion `bson:"inline"`
+	XsdGoPkgHasElem_TaxEntity `bson:"inline"`
+	XsdGoPkgHasElem_HeaderComment `bson:"inline"`
+	XsdGoPkgHasElem_Website `bson:"inline"`
+	XsdGoPkgHasElem_Email `bson:"inline"`
+	XsdGoPkgHasElem_ProductID `bson:"inline"`
+	XsdGoPkgHasElem_Telephone `bson:"inline"`
+	XsdGoPkgHasElem_Fax `bson:"inline"`
+	XsdGoPkgHasElem_TaxRegistrationNumbersequenceTxsdHeaderHeaderschema_TaxRegistrationNumber_TSAFPTPortugueseVatNumber_ `bson:"inline"`
+	XsdGoPkgHasElem_BusinessName `bson:"inline"`
+	XsdGoPkgHasElem_CompanyAddress `bson:"inline"`
+	XsdGoPkgHasElem_CurrencyCodesequenceTxsdHeaderHeaderschema_CurrencyCode_XsdtString_Eur `bson:"inline"`
+	XsdGoPkgHasElem_DateCreated `bson:"inline"`
+	XsdGoPkgHasElem_EndDate `bson:"inline"`
+	XsdGoPkgHasElem_ProductCompanyTaxID `bson:"inline"`
+	XsdGoPkgHasElem_SoftwareCertificateNumber `bson:"inline"`
+	XsdGoPkgHasElem_CompanyID `bson:"inline"`
+	XsdGoPkgHasElem_TaxAccountingBasis `bson:"inline"`
+	XsdGoPkgHasElem_CompanyName `bson:"inline"`
+	XsdGoPkgHasElem_FiscalYear `bson:"inline"`
+	XsdGoPkgHasElem_StartDate `bson:"inline"`
+	XsdGoPkgHasElem_ProductVersion `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdHeader function is not nil (ie. was set by outside code), calls it with this TxsdHeader instance as the single argument. Then calls the Walk() method on 22/22 embed(s) and 0/0 field(s) belonging to this TxsdHeader instance.
@@ -1352,23 +1325,15 @@ func (me *XsdGoPkgHasElem_GroupingCodesequenceTxsdGeneralLedgerAccountsSequenceA
 }
 
 type TxsdGeneralLedgerAccountsSequenceAccount struct {
-	XsdGoPkgHasElem_OpeningCreditBalance
-
-	XsdGoPkgHasElem_GroupingCategory
-
-	XsdGoPkgHasElem_GroupingCodesequenceTxsdGeneralLedgerAccountsSequenceAccountAccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_GroupingCode_TSAFPTGLAccountID_
-
-	XsdGoPkgHasElem_OpeningDebitBalance
-
-	XsdGoPkgHasElem_AccountDescription
-
-	XsdGoPkgHasElem_ClosingDebitBalance
-
-	XsdGoPkgHasElem_ClosingCreditBalance
-
-	XsdGoPkgHasElem_TaxonomyCodesequenceTxsdGeneralLedgerAccountsSequenceAccountAccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_TaxonomyCode_TSAFTaxonomyCode_
-
-	XsdGoPkgHasElem_AccountIDsequenceTxsdGeneralLedgerAccountsSequenceAccountAccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_AccountID_TSAFPTGLAccountID_
+	XsdGoPkgHasElem_OpeningCreditBalance `bson:"inline"`
+	XsdGoPkgHasElem_GroupingCategory `bson:"inline"`
+	XsdGoPkgHasElem_GroupingCodesequenceTxsdGeneralLedgerAccountsSequenceAccountAccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_GroupingCode_TSAFPTGLAccountID_ `bson:"inline"`
+	XsdGoPkgHasElem_OpeningDebitBalance `bson:"inline"`
+	XsdGoPkgHasElem_AccountDescription `bson:"inline"`
+	XsdGoPkgHasElem_ClosingDebitBalance `bson:"inline"`
+	XsdGoPkgHasElem_ClosingCreditBalance `bson:"inline"`
+	XsdGoPkgHasElem_TaxonomyCodesequenceTxsdGeneralLedgerAccountsSequenceAccountAccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_TaxonomyCode_TSAFTaxonomyCode_ `bson:"inline"`
+	XsdGoPkgHasElem_AccountIDsequenceTxsdGeneralLedgerAccountsSequenceAccountAccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_AccountID_TSAFPTGLAccountID_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdGeneralLedgerAccountsSequenceAccount function is not nil (ie. was set by outside code), calls it with this TxsdGeneralLedgerAccountsSequenceAccount instance as the single argument. Then calls the Walk() method on 9/9 embed(s) and 0/0 field(s) belonging to this TxsdGeneralLedgerAccountsSequenceAccount instance.
@@ -1442,9 +1407,8 @@ func (me *XsdGoPkgHasElems_AccountsequenceTxsdGeneralLedgerAccountsGeneralLedger
 }
 
 type TxsdGeneralLedgerAccounts struct {
-	XsdGoPkgHasElem_TaxonomyReference
-
-	XsdGoPkgHasElems_AccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_Account_TxsdGeneralLedgerAccountsSequenceAccount_
+	XsdGoPkgHasElem_TaxonomyReference `bson:"inline"`
+	XsdGoPkgHasElems_AccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_Account_TxsdGeneralLedgerAccountsSequenceAccount_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdGeneralLedgerAccounts function is not nil (ie. was set by outside code), calls it with this TxsdGeneralLedgerAccounts instance as the single argument. Then calls the Walk() method on 2/2 embed(s) and 0/0 field(s) belonging to this TxsdGeneralLedgerAccounts instance.
@@ -1558,19 +1522,13 @@ func (me *XsdGoPkgHasElem_Country) Walk() (err error) {
 }
 
 type TAddressStructure struct {
-	XsdGoPkgHasElem_City
-
-	XsdGoPkgHasElem_PostalCode
-
-	XsdGoPkgHasElem_Region
-
-	XsdGoPkgHasElem_Country
-
-	XsdGoPkgHasElem_BuildingNumber
-
-	XsdGoPkgHasElem_StreetName
-
-	XsdGoPkgHasElem_AddressDetail
+	XsdGoPkgHasElem_City `bson:"inline"`
+	XsdGoPkgHasElem_PostalCode `bson:"inline"`
+	XsdGoPkgHasElem_Region `bson:"inline"`
+	XsdGoPkgHasElem_Country `bson:"inline"`
+	XsdGoPkgHasElem_BuildingNumber `bson:"inline"`
+	XsdGoPkgHasElem_StreetName `bson:"inline"`
+	XsdGoPkgHasElem_AddressDetail `bson:"inline"`
 }
 
 //	If the WalkHandlers.TAddressStructure function is not nil (ie. was set by outside code), calls it with this TAddressStructure instance as the single argument. Then calls the Walk() method on 7/7 embed(s) and 0/0 field(s) belonging to this TAddressStructure instance.
@@ -1746,29 +1704,18 @@ func (me *XsdGoPkgHasElems_ShipToAddress) Walk() (err error) {
 }
 
 type TxsdCustomer struct {
-	XsdGoPkgHasElem_CustomerTaxID
-
-	XsdGoPkgHasElem_BillingAddress
-
-	XsdGoPkgHasElem_Telephone
-
-	XsdGoPkgHasElem_Fax
-
-	XsdGoPkgHasElem_Email
-
-	XsdGoPkgHasElem_CustomerID
-
-	XsdGoPkgHasElem_AccountID
-
-	XsdGoPkgHasElem_CompanyName
-
-	XsdGoPkgHasElem_Contact
-
-	XsdGoPkgHasElems_ShipToAddress
-
-	XsdGoPkgHasElem_Website
-
-	XsdGoPkgHasElem_SelfBillingIndicator
+	XsdGoPkgHasElem_CustomerTaxID `bson:"inline"`
+	XsdGoPkgHasElem_BillingAddress `bson:"inline"`
+	XsdGoPkgHasElem_Telephone `bson:"inline"`
+	XsdGoPkgHasElem_Fax `bson:"inline"`
+	XsdGoPkgHasElem_Email `bson:"inline"`
+	XsdGoPkgHasElem_CustomerID `bson:"inline"`
+	XsdGoPkgHasElem_AccountID `bson:"inline"`
+	XsdGoPkgHasElem_CompanyName `bson:"inline"`
+	XsdGoPkgHasElem_Contact `bson:"inline"`
+	XsdGoPkgHasElems_ShipToAddress `bson:"inline"`
+	XsdGoPkgHasElem_Website `bson:"inline"`
+	XsdGoPkgHasElem_SelfBillingIndicator `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdCustomer function is not nil (ie. was set by outside code), calls it with this TxsdCustomer instance as the single argument. Then calls the Walk() method on 12/12 embed(s) and 0/0 field(s) belonging to this TxsdCustomer instance.
@@ -1925,19 +1872,13 @@ func (me *XsdGoPkgHasElem_CountrysequenceSupplierAddressStructureschema_Country_
 }
 
 type TSupplierAddressStructure struct {
-	XsdGoPkgHasElem_PostalCode
-
-	XsdGoPkgHasElem_Region
-
-	XsdGoPkgHasElem_CountrysequenceSupplierAddressStructureschema_Country_TSupplierCountry_
-
-	XsdGoPkgHasElem_BuildingNumber
-
-	XsdGoPkgHasElem_StreetName
-
-	XsdGoPkgHasElem_AddressDetail
-
-	XsdGoPkgHasElem_City
+	XsdGoPkgHasElem_PostalCode `bson:"inline"`
+	XsdGoPkgHasElem_Region `bson:"inline"`
+	XsdGoPkgHasElem_CountrysequenceSupplierAddressStructureschema_Country_TSupplierCountry_ `bson:"inline"`
+	XsdGoPkgHasElem_BuildingNumber `bson:"inline"`
+	XsdGoPkgHasElem_StreetName `bson:"inline"`
+	XsdGoPkgHasElem_AddressDetail `bson:"inline"`
+	XsdGoPkgHasElem_City `bson:"inline"`
 }
 
 //	If the WalkHandlers.TSupplierAddressStructure function is not nil (ie. was set by outside code), calls it with this TSupplierAddressStructure instance as the single argument. Then calls the Walk() method on 7/7 embed(s) and 0/0 field(s) belonging to this TSupplierAddressStructure instance.
@@ -2029,29 +1970,18 @@ func (me *XsdGoPkgHasElem_BillingAddresssequenceTxsdSupplierSupplierschema_Billi
 }
 
 type TxsdSupplier struct {
-	XsdGoPkgHasElem_AccountID
-
-	XsdGoPkgHasElem_Contact
-
-	XsdGoPkgHasElem_BillingAddresssequenceTxsdSupplierSupplierschema_BillingAddress_TSupplierAddressStructure_
-
-	XsdGoPkgHasElem_Email
-
-	XsdGoPkgHasElem_Website
-
-	XsdGoPkgHasElem_SelfBillingIndicator
-
-	XsdGoPkgHasElem_SupplierID
-
-	XsdGoPkgHasElem_SupplierTaxID
-
-	XsdGoPkgHasElem_CompanyName
-
-	XsdGoPkgHasElems_ShipFromAddresssequenceTxsdSupplierSupplierschema_ShipFromAddress_TSupplierAddressStructure_
-
-	XsdGoPkgHasElem_Telephone
-
-	XsdGoPkgHasElem_Fax
+	XsdGoPkgHasElem_AccountID `bson:"inline"`
+	XsdGoPkgHasElem_Contact `bson:"inline"`
+	XsdGoPkgHasElem_BillingAddresssequenceTxsdSupplierSupplierschema_BillingAddress_TSupplierAddressStructure_ `bson:"inline"`
+	XsdGoPkgHasElem_Email `bson:"inline"`
+	XsdGoPkgHasElem_Website `bson:"inline"`
+	XsdGoPkgHasElem_SelfBillingIndicator `bson:"inline"`
+	XsdGoPkgHasElem_SupplierID `bson:"inline"`
+	XsdGoPkgHasElem_SupplierTaxID `bson:"inline"`
+	XsdGoPkgHasElem_CompanyName `bson:"inline"`
+	XsdGoPkgHasElems_ShipFromAddresssequenceTxsdSupplierSupplierschema_ShipFromAddress_TSupplierAddressStructure_ `bson:"inline"`
+	XsdGoPkgHasElem_Telephone `bson:"inline"`
+	XsdGoPkgHasElem_Fax `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSupplier function is not nil (ie. was set by outside code), calls it with this TxsdSupplier instance as the single argument. Then calls the Walk() method on 12/12 embed(s) and 0/0 field(s) belonging to this TxsdSupplier instance.
@@ -2219,9 +2149,8 @@ func (me *XsdGoPkgHasElems_UNNumber) Walk() (err error) {
 }
 
 type TCustomsDetails struct {
-	XsdGoPkgHasElems_CNCode
-
-	XsdGoPkgHasElems_UNNumber
+	XsdGoPkgHasElems_CNCode `bson:"inline"`
+	XsdGoPkgHasElems_UNNumber `bson:"inline"`
 }
 
 //	If the WalkHandlers.TCustomsDetails function is not nil (ie. was set by outside code), calls it with this TCustomsDetails instance as the single argument. Then calls the Walk() method on 2/2 embed(s) and 0/0 field(s) belonging to this TCustomsDetails instance.
@@ -2395,17 +2324,12 @@ func (me *XsdGoPkgHasElem_ProductDescription) Walk() (err error) {
 }
 
 type TxsdProduct struct {
-	XsdGoPkgHasElem_ProductType
-
-	XsdGoPkgHasElem_ProductCode
-
-	XsdGoPkgHasElem_ProductGroup
-
-	XsdGoPkgHasElem_ProductDescription
-
-	XsdGoPkgHasElem_ProductNumberCode
-
-	XsdGoPkgHasElem_CustomsDetailssequenceTxsdProductProductschema_CustomsDetails_TCustomsDetails_
+	XsdGoPkgHasElem_ProductType `bson:"inline"`
+	XsdGoPkgHasElem_ProductCode `bson:"inline"`
+	XsdGoPkgHasElem_ProductGroup `bson:"inline"`
+	XsdGoPkgHasElem_ProductDescription `bson:"inline"`
+	XsdGoPkgHasElem_ProductNumberCode `bson:"inline"`
+	XsdGoPkgHasElem_CustomsDetailssequenceTxsdProductProductschema_CustomsDetails_TCustomsDetails_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdProduct function is not nil (ie. was set by outside code), calls it with this TxsdProduct instance as the single argument. Then calls the Walk() method on 6/6 embed(s) and 0/0 field(s) belonging to this TxsdProduct instance.
@@ -2670,19 +2594,13 @@ func (me *XsdGoPkgHasElem_TaxCodesequenceTxsdTaxTableEntryTaxTableEntryschema_Ta
 }
 
 type TxsdTaxTableEntry struct {
-	XsdGoPkgHasElem_TaxExpirationDate
-
-	XsdGoPkgHasElem_TaxPercentage
-
-	XsdGoPkgHasElem_TaxAmount
-
-	XsdGoPkgHasElem_TaxType
-
-	XsdGoPkgHasElem_TaxCountryRegion
-
-	XsdGoPkgHasElem_TaxCodesequenceTxsdTaxTableEntryTaxTableEntryschema_TaxCode_TaxTableEntryTaxCode_
-
-	XsdGoPkgHasElem_DescriptionsequenceTxsdTaxTableEntryTaxTableEntryschema_Description_TSAFPTtextTypeMandatoryMax255Car_
+	XsdGoPkgHasElem_TaxExpirationDate `bson:"inline"`
+	XsdGoPkgHasElem_TaxPercentage `bson:"inline"`
+	XsdGoPkgHasElem_TaxAmount `bson:"inline"`
+	XsdGoPkgHasElem_TaxType `bson:"inline"`
+	XsdGoPkgHasElem_TaxCountryRegion `bson:"inline"`
+	XsdGoPkgHasElem_TaxCodesequenceTxsdTaxTableEntryTaxTableEntryschema_TaxCode_TaxTableEntryTaxCode_ `bson:"inline"`
+	XsdGoPkgHasElem_DescriptionsequenceTxsdTaxTableEntryTaxTableEntryschema_Description_TSAFPTtextTypeMandatoryMax255Car_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdTaxTableEntry function is not nil (ie. was set by outside code), calls it with this TxsdTaxTableEntry instance as the single argument. Then calls the Walk() method on 7/7 embed(s) and 0/0 field(s) belonging to this TxsdTaxTableEntry instance.
@@ -2750,7 +2668,7 @@ func (me *XsdGoPkgHasElems_TaxTableEntry) Walk() (err error) {
 }
 
 type TxsdTaxTable struct {
-	XsdGoPkgHasElems_TaxTableEntry
+	XsdGoPkgHasElems_TaxTableEntry `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdTaxTable function is not nil (ie. was set by outside code), calls it with this TxsdTaxTable instance as the single argument. Then calls the Walk() method on 1/1 embed(s) and 0/0 field(s) belonging to this TxsdTaxTable instance.
@@ -2798,15 +2716,11 @@ func (me *XsdGoPkgHasElem_TaxTable) Walk() (err error) {
 }
 
 type TxsdAuditFileSequenceMasterFiles struct {
-	XsdGoPkgHasElems_Product
-
-	XsdGoPkgHasElem_TaxTable
-
-	XsdGoPkgHasElem_GeneralLedgerAccounts
-
-	XsdGoPkgHasElems_Customer
-
-	XsdGoPkgHasElems_Supplier
+	XsdGoPkgHasElems_Product `bson:"inline"`
+	XsdGoPkgHasElem_TaxTable `bson:"inline"`
+	XsdGoPkgHasElem_GeneralLedgerAccounts `bson:"inline"`
+	XsdGoPkgHasElems_Customer `bson:"inline"`
+	XsdGoPkgHasElems_Supplier `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdAuditFileSequenceMasterFiles function is not nil (ie. was set by outside code), calls it with this TxsdAuditFileSequenceMasterFiles instance as the single argument. Then calls the Walk() method on 5/5 embed(s) and 0/0 field(s) belonging to this TxsdAuditFileSequenceMasterFiles instance.
@@ -3141,17 +3055,12 @@ func (me *XsdGoPkgHasElem_DebitAmountsequenceTxsdGeneralLedgerEntriesSequenceJou
 }
 
 type TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLine struct {
-	XsdGoPkgHasElem_RecordID
-
-	XsdGoPkgHasElem_AccountIDsequenceTxsdGeneralLedgerAccountsSequenceAccountAccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_AccountID_TSAFPTGLAccountID_
-
-	XsdGoPkgHasElem_SourceDocumentID
-
-	XsdGoPkgHasElem_SystemEntryDate
-
-	XsdGoPkgHasElem_Description
-
-	XsdGoPkgHasElem_DebitAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLineDebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitAmount_TSAFmonetaryType_
+	XsdGoPkgHasElem_RecordID `bson:"inline"`
+	XsdGoPkgHasElem_AccountIDsequenceTxsdGeneralLedgerAccountsSequenceAccountAccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_AccountID_TSAFPTGLAccountID_ `bson:"inline"`
+	XsdGoPkgHasElem_SourceDocumentID `bson:"inline"`
+	XsdGoPkgHasElem_SystemEntryDate `bson:"inline"`
+	XsdGoPkgHasElem_Description `bson:"inline"`
+	XsdGoPkgHasElem_DebitAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLineDebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitAmount_TSAFmonetaryType_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLine function is not nil (ie. was set by outside code), calls it with this TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLine instance as the single argument. Then calls the Walk() method on 6/6 embed(s) and 0/0 field(s) belonging to this TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLine instance.
@@ -3235,17 +3144,12 @@ func (me *XsdGoPkgHasElem_CreditAmountsequenceTxsdGeneralLedgerEntriesSequenceJo
 }
 
 type TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLine struct {
-	XsdGoPkgHasElem_RecordID
-
-	XsdGoPkgHasElem_AccountIDsequenceTxsdGeneralLedgerAccountsSequenceAccountAccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_AccountID_TSAFPTGLAccountID_
-
-	XsdGoPkgHasElem_SourceDocumentID
-
-	XsdGoPkgHasElem_SystemEntryDate
-
-	XsdGoPkgHasElem_Description
-
-	XsdGoPkgHasElem_CreditAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLineCreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditAmount_TSAFmonetaryType_
+	XsdGoPkgHasElem_RecordID `bson:"inline"`
+	XsdGoPkgHasElem_AccountIDsequenceTxsdGeneralLedgerAccountsSequenceAccountAccountsequenceTxsdGeneralLedgerAccountsGeneralLedgerAccountsschema_AccountID_TSAFPTGLAccountID_ `bson:"inline"`
+	XsdGoPkgHasElem_SourceDocumentID `bson:"inline"`
+	XsdGoPkgHasElem_SystemEntryDate `bson:"inline"`
+	XsdGoPkgHasElem_Description `bson:"inline"`
+	XsdGoPkgHasElem_CreditAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLineCreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditAmount_TSAFmonetaryType_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLine function is not nil (ie. was set by outside code), calls it with this TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLine instance as the single argument. Then calls the Walk() method on 6/6 embed(s) and 0/0 field(s) belonging to this TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLine instance.
@@ -3308,9 +3212,8 @@ func (me *XsdGoPkgHasElem_CreditLineallTxsdGeneralLedgerEntriesSequenceJournalSe
 }
 
 type TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLines struct {
-	XsdGoPkgHasElem_CreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditLine_TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLine_
-
-	XsdGoPkgHasElem_DebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitLine_TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLine_
+	XsdGoPkgHasElem_CreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditLine_TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLine_ `bson:"inline"`
+	XsdGoPkgHasElem_DebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitLine_TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLine_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLines function is not nil (ie. was set by outside code), calls it with this TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLines instance as the single argument. Then calls the Walk() method on 2/2 embed(s) and 0/0 field(s) belonging to this TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLines instance.
@@ -3481,27 +3384,17 @@ func (me *XsdGoPkgHasElem_GLPostingDate) Walk() (err error) {
 }
 
 type TxsdGeneralLedgerEntriesSequenceJournalSequenceTransaction struct {
-	XsdGoPkgHasElem_SupplierID
-
-	XsdGoPkgHasElem_PeriodsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_Period_TSAFPTAccountingPeriod_
-
-	XsdGoPkgHasElem_SourceID
-
-	XsdGoPkgHasElem_DocArchivalNumber
-
-	XsdGoPkgHasElem_CustomerID
-
-	XsdGoPkgHasElem_TransactionDate
-
-	XsdGoPkgHasElem_Description
-
-	XsdGoPkgHasElem_TransactionType
-
-	XsdGoPkgHasElem_GLPostingDate
-
-	XsdGoPkgHasElem_LinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_Lines_TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLines_
-
-	XsdGoPkgHasElem_TransactionID
+	XsdGoPkgHasElem_SupplierID `bson:"inline"`
+	XsdGoPkgHasElem_PeriodsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_Period_TSAFPTAccountingPeriod_ `bson:"inline"`
+	XsdGoPkgHasElem_SourceID `bson:"inline"`
+	XsdGoPkgHasElem_DocArchivalNumber `bson:"inline"`
+	XsdGoPkgHasElem_CustomerID `bson:"inline"`
+	XsdGoPkgHasElem_TransactionDate `bson:"inline"`
+	XsdGoPkgHasElem_Description `bson:"inline"`
+	XsdGoPkgHasElem_TransactionType `bson:"inline"`
+	XsdGoPkgHasElem_GLPostingDate `bson:"inline"`
+	XsdGoPkgHasElem_LinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_Lines_TxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLines_ `bson:"inline"`
+	XsdGoPkgHasElem_TransactionID `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdGeneralLedgerEntriesSequenceJournalSequenceTransaction function is not nil (ie. was set by outside code), calls it with this TxsdGeneralLedgerEntriesSequenceJournalSequenceTransaction instance as the single argument. Then calls the Walk() method on 11/11 embed(s) and 0/0 field(s) belonging to this TxsdGeneralLedgerEntriesSequenceJournalSequenceTransaction instance.
@@ -3581,11 +3474,9 @@ func (me *XsdGoPkgHasElems_TransactionsequenceTxsdGeneralLedgerEntriesSequenceJo
 }
 
 type TxsdGeneralLedgerEntriesSequenceJournal struct {
-	XsdGoPkgHasElem_JournalID
-
-	XsdGoPkgHasElem_Description
-
-	XsdGoPkgHasElems_TransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_Transaction_TxsdGeneralLedgerEntriesSequenceJournalSequenceTransaction_
+	XsdGoPkgHasElem_JournalID `bson:"inline"`
+	XsdGoPkgHasElem_Description `bson:"inline"`
+	XsdGoPkgHasElems_TransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_Transaction_TxsdGeneralLedgerEntriesSequenceJournalSequenceTransaction_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdGeneralLedgerEntriesSequenceJournal function is not nil (ie. was set by outside code), calls it with this TxsdGeneralLedgerEntriesSequenceJournal instance as the single argument. Then calls the Walk() method on 3/3 embed(s) and 0/0 field(s) belonging to this TxsdGeneralLedgerEntriesSequenceJournal instance.
@@ -3662,13 +3553,10 @@ func (me *XsdGoPkgHasElem_NumberOfEntries) Walk() (err error) {
 }
 
 type TxsdGeneralLedgerEntries struct {
-	XsdGoPkgHasElem_NumberOfEntries
-
-	XsdGoPkgHasElem_TotalDebit
-
-	XsdGoPkgHasElem_TotalCredit
-
-	XsdGoPkgHasElems_JournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_Journal_TxsdGeneralLedgerEntriesSequenceJournal_
+	XsdGoPkgHasElem_NumberOfEntries `bson:"inline"`
+	XsdGoPkgHasElem_TotalDebit `bson:"inline"`
+	XsdGoPkgHasElem_TotalCredit `bson:"inline"`
+	XsdGoPkgHasElems_JournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_Journal_TxsdGeneralLedgerEntriesSequenceJournal_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdGeneralLedgerEntries function is not nil (ie. was set by outside code), calls it with this TxsdGeneralLedgerEntries instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TxsdGeneralLedgerEntries instance.
@@ -3875,15 +3763,11 @@ func (me *XsdGoPkgHasElem_Address) Walk() (err error) {
 }
 
 type TShippingPointStructure struct {
-	XsdGoPkgHasElems_DeliveryID
-
-	XsdGoPkgHasElem_DeliveryDate
-
-	XsdGoPkgHasElem_Address
-
-	XsdGoPkgHasElems_WarehouseID
-
-	XsdGoPkgHasElems_LocationID
+	XsdGoPkgHasElems_DeliveryID `bson:"inline"`
+	XsdGoPkgHasElem_DeliveryDate `bson:"inline"`
+	XsdGoPkgHasElem_Address `bson:"inline"`
+	XsdGoPkgHasElems_WarehouseID `bson:"inline"`
+	XsdGoPkgHasElems_LocationID `bson:"inline"`
 }
 
 //	If the WalkHandlers.TShippingPointStructure function is not nil (ie. was set by outside code), calls it with this TShippingPointStructure instance as the single argument. Then calls the Walk() method on 5/5 embed(s) and 0/0 field(s) belonging to this TShippingPointStructure instance.
@@ -4240,15 +4124,11 @@ func (me *XsdGoPkgHasElem_Reason) Walk() (err error) {
 }
 
 type TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatus struct {
-	XsdGoPkgHasElem_SourceBillingsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatusDocumentStatussequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_SourceBilling_TSAFTPTSourceBilling_
-
-	XsdGoPkgHasElem_InvoiceStatus
-
-	XsdGoPkgHasElem_InvoiceStatusDate
-
-	XsdGoPkgHasElem_Reason
-
-	XsdGoPkgHasElem_SourceID
+	XsdGoPkgHasElem_SourceBillingsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatusDocumentStatussequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_SourceBilling_TSAFTPTSourceBilling_ `bson:"inline"`
+	XsdGoPkgHasElem_InvoiceStatus `bson:"inline"`
+	XsdGoPkgHasElem_InvoiceStatusDate `bson:"inline"`
+	XsdGoPkgHasElem_Reason `bson:"inline"`
+	XsdGoPkgHasElem_SourceID `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatus function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatus instance as the single argument. Then calls the Walk() method on 5/5 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatus instance.
@@ -4371,11 +4251,9 @@ func (me *XsdGoPkgHasElem_ThirdPartiesBillingIndicator) Walk() (err error) {
 }
 
 type TSpecialRegimes struct {
-	XsdGoPkgHasElem_SelfBillingIndicator
-
-	XsdGoPkgHasElem_CashVATSchemeIndicator
-
-	XsdGoPkgHasElem_ThirdPartiesBillingIndicator
+	XsdGoPkgHasElem_SelfBillingIndicator `bson:"inline"`
+	XsdGoPkgHasElem_CashVATSchemeIndicator `bson:"inline"`
+	XsdGoPkgHasElem_ThirdPartiesBillingIndicator `bson:"inline"`
 }
 
 //	If the WalkHandlers.TSpecialRegimes function is not nil (ie. was set by outside code), calls it with this TSpecialRegimes instance as the single argument. Then calls the Walk() method on 3/3 embed(s) and 0/0 field(s) belonging to this TSpecialRegimes instance.
@@ -4516,9 +4394,8 @@ func (me *XsdGoPkgHasElem_OriginatingON) Walk() (err error) {
 }
 
 type TOrderReferences struct {
-	XsdGoPkgHasElem_OrderDate
-
-	XsdGoPkgHasElem_OriginatingON
+	XsdGoPkgHasElem_OrderDate `bson:"inline"`
+	XsdGoPkgHasElem_OriginatingON `bson:"inline"`
 }
 
 //	If the WalkHandlers.TOrderReferences function is not nil (ie. was set by outside code), calls it with this TOrderReferences instance as the single argument. Then calls the Walk() method on 2/2 embed(s) and 0/0 field(s) belonging to this TOrderReferences instance.
@@ -4613,7 +4490,7 @@ func (me *XsdGoPkgHasElems_SerialNumber) Walk() (err error) {
 }
 
 type TProductSerialNumber struct {
-	XsdGoPkgHasElems_SerialNumber
+	XsdGoPkgHasElems_SerialNumber `bson:"inline"`
 }
 
 //	If the WalkHandlers.TProductSerialNumber function is not nil (ie. was set by outside code), calls it with this TProductSerialNumber instance as the single argument. Then calls the Walk() method on 1/1 embed(s) and 0/0 field(s) belonging to this TProductSerialNumber instance.
@@ -4745,15 +4622,11 @@ func (me *XsdGoPkgHasElem_TaxCode) Walk() (err error) {
 }
 
 type Tax struct {
-	XsdGoPkgHasElem_TaxCode
-
-	XsdGoPkgHasElem_TaxPercentage
-
-	XsdGoPkgHasElem_TaxAmount
-
-	XsdGoPkgHasElem_TaxType
-
-	XsdGoPkgHasElem_TaxCountryRegion
+	XsdGoPkgHasElem_TaxCode `bson:"inline"`
+	XsdGoPkgHasElem_TaxPercentage `bson:"inline"`
+	XsdGoPkgHasElem_TaxAmount `bson:"inline"`
+	XsdGoPkgHasElem_TaxType `bson:"inline"`
+	XsdGoPkgHasElem_TaxCountryRegion `bson:"inline"`
 }
 
 //	If the WalkHandlers.Tax function is not nil (ie. was set by outside code), calls it with this Tax instance as the single argument. Then calls the Walk() method on 5/5 embed(s) and 0/0 field(s) belonging to this Tax instance.
@@ -4866,9 +4739,8 @@ func (me *XsdGoPkgHasElem_IECAmount) Walk() (err error) {
 }
 
 type TCustomsInformation struct {
-	XsdGoPkgHasElems_ARCNo
-
-	XsdGoPkgHasElem_IECAmount
+	XsdGoPkgHasElems_ARCNo `bson:"inline"`
+	XsdGoPkgHasElem_IECAmount `bson:"inline"`
 }
 
 //	If the WalkHandlers.TCustomsInformation function is not nil (ie. was set by outside code), calls it with this TCustomsInformation instance as the single argument. Then calls the Walk() method on 2/2 embed(s) and 0/0 field(s) belonging to this TCustomsInformation instance.
@@ -5014,9 +4886,8 @@ func (me *XsdGoPkgHasElem_Reference) Walk() (err error) {
 }
 
 type TReferences struct {
-	XsdGoPkgHasElem_Reference
-
-	XsdGoPkgHasElem_Reason
+	XsdGoPkgHasElem_Reference `bson:"inline"`
+	XsdGoPkgHasElem_Reason `bson:"inline"`
 }
 
 //	If the WalkHandlers.TReferences function is not nil (ie. was set by outside code), calls it with this TReferences instance as the single argument. Then calls the Walk() method on 2/2 embed(s) and 0/0 field(s) belonging to this TReferences instance.
@@ -5101,43 +4972,25 @@ func (me *XsdGoPkgHasElem_TaxExemptionCode) Walk() (err error) {
 }
 
 type TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLine struct {
-	XsdGoPkgHasElem_DebitAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLineDebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitAmount_TSAFmonetaryType_
-
-	XsdGoPkgHasElem_CreditAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLineCreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditAmount_TSAFmonetaryType_
-
-	XsdGoPkgHasElems_ReferencessequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_References_TReferences_
-
-	XsdGoPkgHasElem_Description
-
-	XsdGoPkgHasElem_TaxExemptionCode
-
-	XsdGoPkgHasElem_LineNumber
-
-	XsdGoPkgHasElems_OrderReferencessequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_OrderReferences_TOrderReferences_
-
-	XsdGoPkgHasElem_Quantity
-
-	XsdGoPkgHasElem_ProductSerialNumbersequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_ProductSerialNumber_TProductSerialNumber_
-
-	XsdGoPkgHasElem_SettlementAmount
-
-	XsdGoPkgHasElem_ProductCode
-
-	XsdGoPkgHasElem_UnitOfMeasure
-
-	XsdGoPkgHasElem_TaxBase
-
-	XsdGoPkgHasElem_TaxsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Tax_Tax_
-
-	XsdGoPkgHasElem_CustomsInformationsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_CustomsInformation_TCustomsInformation_
-
-	XsdGoPkgHasElem_ProductDescription
-
-	XsdGoPkgHasElem_UnitPrice
-
-	XsdGoPkgHasElem_TaxPointDate
-
-	XsdGoPkgHasElem_TaxExemptionReason
+	XsdGoPkgHasElem_DebitAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLineDebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitAmount_TSAFmonetaryType_ `bson:"inline"`
+	XsdGoPkgHasElem_CreditAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLineCreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditAmount_TSAFmonetaryType_ `bson:"inline"`
+	XsdGoPkgHasElems_ReferencessequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_References_TReferences_ `bson:"inline"`
+	XsdGoPkgHasElem_Description `bson:"inline"`
+	XsdGoPkgHasElem_TaxExemptionCode `bson:"inline"`
+	XsdGoPkgHasElem_LineNumber `bson:"inline"`
+	XsdGoPkgHasElems_OrderReferencessequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_OrderReferences_TOrderReferences_ `bson:"inline"`
+	XsdGoPkgHasElem_Quantity `bson:"inline"`
+	XsdGoPkgHasElem_ProductSerialNumbersequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_ProductSerialNumber_TProductSerialNumber_ `bson:"inline"`
+	XsdGoPkgHasElem_SettlementAmount `bson:"inline"`
+	XsdGoPkgHasElem_ProductCode `bson:"inline"`
+	XsdGoPkgHasElem_UnitOfMeasure `bson:"inline"`
+	XsdGoPkgHasElem_TaxBase `bson:"inline"`
+	XsdGoPkgHasElem_TaxsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Tax_Tax_ `bson:"inline"`
+	XsdGoPkgHasElem_CustomsInformationsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_CustomsInformation_TCustomsInformation_ `bson:"inline"`
+	XsdGoPkgHasElem_ProductDescription `bson:"inline"`
+	XsdGoPkgHasElem_UnitPrice `bson:"inline"`
+	XsdGoPkgHasElem_TaxPointDate `bson:"inline"`
+	XsdGoPkgHasElem_TaxExemptionReason `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLine function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLine instance as the single argument. Then calls the Walk() method on 19/19 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLine instance.
@@ -5304,13 +5157,10 @@ func (me *XsdGoPkgHasElem_PaymentTermssequenceSettlementschema_PaymentTerms_TSAF
 }
 
 type TSettlement struct {
-	XsdGoPkgHasElem_SettlementDiscountsequenceSettlementschema_SettlementDiscount_TSAFPTtextTypeMandatoryMax30Car_
-
-	XsdGoPkgHasElem_SettlementAmount
-
-	XsdGoPkgHasElem_SettlementDatesequenceSettlementschema_SettlementDate_TSAFdateType_
-
-	XsdGoPkgHasElem_PaymentTermssequenceSettlementschema_PaymentTerms_TSAFPTtextTypeMandatoryMax100Car_
+	XsdGoPkgHasElem_SettlementDiscountsequenceSettlementschema_SettlementDiscount_TSAFPTtextTypeMandatoryMax30Car_ `bson:"inline"`
+	XsdGoPkgHasElem_SettlementAmount `bson:"inline"`
+	XsdGoPkgHasElem_SettlementDatesequenceSettlementschema_SettlementDate_TSAFdateType_ `bson:"inline"`
+	XsdGoPkgHasElem_PaymentTermssequenceSettlementschema_PaymentTerms_TSAFPTtextTypeMandatoryMax100Car_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TSettlement function is not nil (ie. was set by outside code), calls it with this TSettlement instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TSettlement instance.
@@ -5487,11 +5337,9 @@ func (me *XsdGoPkgHasElem_PaymentDatesequencePaymentMethodschema_PaymentDate_TSA
 }
 
 type TPaymentMethod struct {
-	XsdGoPkgHasElem_PaymentAmountsequencePaymentMethodschema_PaymentAmount_TSAFmonetaryType_
-
-	XsdGoPkgHasElem_PaymentDatesequencePaymentMethodschema_PaymentDate_TSAFdateType_
-
-	XsdGoPkgHasElem_PaymentMechanism
+	XsdGoPkgHasElem_PaymentAmountsequencePaymentMethodschema_PaymentAmount_TSAFmonetaryType_ `bson:"inline"`
+	XsdGoPkgHasElem_PaymentDatesequencePaymentMethodschema_PaymentDate_TSAFdateType_ `bson:"inline"`
+	XsdGoPkgHasElem_PaymentMechanism `bson:"inline"`
 }
 
 //	If the WalkHandlers.TPaymentMethod function is not nil (ie. was set by outside code), calls it with this TPaymentMethod instance as the single argument. Then calls the Walk() method on 3/3 embed(s) and 0/0 field(s) belonging to this TPaymentMethod instance.
@@ -5673,11 +5521,9 @@ func (me *XsdGoPkgHasElem_CurrencyCode) Walk() (err error) {
 }
 
 type TCurrency struct {
-	XsdGoPkgHasElem_ExchangeRate
-
-	XsdGoPkgHasElem_CurrencyCode
-
-	XsdGoPkgHasElem_CurrencyAmount
+	XsdGoPkgHasElem_ExchangeRate `bson:"inline"`
+	XsdGoPkgHasElem_CurrencyCode `bson:"inline"`
+	XsdGoPkgHasElem_CurrencyAmount `bson:"inline"`
 }
 
 //	If the WalkHandlers.TCurrency function is not nil (ie. was set by outside code), calls it with this TCurrency instance as the single argument. Then calls the Walk() method on 3/3 embed(s) and 0/0 field(s) belonging to this TCurrency instance.
@@ -5731,17 +5577,12 @@ func (me *XsdGoPkgHasElem_CurrencysequenceTxsdSourceDocumentsSequenceSalesInvoic
 }
 
 type TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotals struct {
-	XsdGoPkgHasElem_NetTotal
-
-	XsdGoPkgHasElem_GrossTotal
-
-	XsdGoPkgHasElem_CurrencysequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Currency_TCurrency_
-
-	XsdGoPkgHasElems_SettlementsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Settlement_TSettlement_
-
-	XsdGoPkgHasElems_PaymentsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Payment_TPaymentMethod_
-
-	XsdGoPkgHasElem_TaxPayable
+	XsdGoPkgHasElem_NetTotal `bson:"inline"`
+	XsdGoPkgHasElem_GrossTotal `bson:"inline"`
+	XsdGoPkgHasElem_CurrencysequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Currency_TCurrency_ `bson:"inline"`
+	XsdGoPkgHasElems_SettlementsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Settlement_TSettlement_ `bson:"inline"`
+	XsdGoPkgHasElems_PaymentsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Payment_TPaymentMethod_ `bson:"inline"`
+	XsdGoPkgHasElem_TaxPayable `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotals function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotals instance as the single argument. Then calls the Walk() method on 6/6 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotals instance.
@@ -5889,11 +5730,9 @@ func (me *XsdGoPkgHasElem_WithholdingTaxDescriptionsequenceWithholdingTaxschema_
 }
 
 type TWithholdingTax struct {
-	XsdGoPkgHasElem_WithholdingTaxType
-
-	XsdGoPkgHasElem_WithholdingTaxDescriptionsequenceWithholdingTaxschema_WithholdingTaxDescription_TSAFPTtextTypeMandatoryMax60Car_
-
-	XsdGoPkgHasElem_WithholdingTaxAmountsequenceWithholdingTaxschema_WithholdingTaxAmount_TSAFmonetaryType_
+	XsdGoPkgHasElem_WithholdingTaxType `bson:"inline"`
+	XsdGoPkgHasElem_WithholdingTaxDescriptionsequenceWithholdingTaxschema_WithholdingTaxDescription_TSAFPTtextTypeMandatoryMax60Car_ `bson:"inline"`
+	XsdGoPkgHasElem_WithholdingTaxAmountsequenceWithholdingTaxschema_WithholdingTaxAmount_TSAFmonetaryType_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TWithholdingTax function is not nil (ie. was set by outside code), calls it with this TWithholdingTax instance as the single argument. Then calls the Walk() method on 3/3 embed(s) and 0/0 field(s) belonging to this TWithholdingTax instance.
@@ -6012,47 +5851,47 @@ func (me *XsdGoPkgHasElem_MovementStartTime) Walk() (err error) {
 }
 
 type TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice struct {
-	XsdGoPkgHasElem_DocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentTotals_TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotals_
+	XsdGoPkgHasElem_DocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentTotals_TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotals_ `bson:"inline"`
 
-	XsdGoPkgHasElems_WithholdingTaxsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_WithholdingTax_TWithholdingTax_
+	XsdGoPkgHasElems_WithholdingTaxsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_WithholdingTax_TWithholdingTax_ `bson:"inline"`
 
-	XsdGoPkgHasElem_SourceID
+	XsdGoPkgHasElem_SourceID `bson:"inline"`
 
-	XsdGoPkgHasElem_EACCode
+	XsdGoPkgHasElem_EACCode `bson:"inline"`
 
-	XsdGoPkgHasElem_MovementEndTime
+	XsdGoPkgHasElem_MovementEndTime `bson:"inline"`
 
-	XsdGoPkgHasElem_MovementStartTime
+	XsdGoPkgHasElem_MovementStartTime `bson:"inline"`
 
-	XsdGoPkgHasElems_LinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Line_TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLine_
+	XsdGoPkgHasElems_LinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Line_TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLine_ `bson:"inline"`
 
-	XsdGoPkgHasElem_InvoiceNo
+	XsdGoPkgHasElem_InvoiceNo `bson:"inline"`
 
-	XsdGoPkgHasElem_Period
+	XsdGoPkgHasElem_Period `bson:"inline"`
 
-	XsdGoPkgHasElem_TransactionID
+	XsdGoPkgHasElem_TransactionID `bson:"inline"`
 
-	XsdGoPkgHasElem_CustomerID
+	XsdGoPkgHasElem_CustomerID `bson:"inline"`
 
-	XsdGoPkgHasElem_ShipTo
+	XsdGoPkgHasElem_ShipTo `bson:"inline"`
 
-	XsdGoPkgHasElem_Atcud
+	XsdGoPkgHasElem_Atcud `bson:"inline"`
 
-	XsdGoPkgHasElem_Hash
+	XsdGoPkgHasElem_Hash `bson:"inline"`
 
-	XsdGoPkgHasElem_HashControl
+	XsdGoPkgHasElem_HashControl `bson:"inline"`
 
-	XsdGoPkgHasElem_InvoiceType
+	XsdGoPkgHasElem_InvoiceType `bson:"inline"`
 
-	XsdGoPkgHasElem_SystemEntryDate
+	XsdGoPkgHasElem_SystemEntryDate `bson:"inline"`
 
-	XsdGoPkgHasElem_DocumentStatussequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentStatus_TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatus_
+	XsdGoPkgHasElem_DocumentStatussequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentStatus_TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatus_ `bson:"inline"`
 
-	XsdGoPkgHasElem_InvoiceDate
+	XsdGoPkgHasElem_InvoiceDate `bson:"inline"`
 
-	XsdGoPkgHasElem_SpecialRegimessequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_SpecialRegimes_TSpecialRegimes_
+	XsdGoPkgHasElem_SpecialRegimessequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_SpecialRegimes_TSpecialRegimes_ `bson:"inline"`
 
-	XsdGoPkgHasElem_ShipFrom
+	XsdGoPkgHasElem_ShipFrom `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice instance as the single argument. Then calls the Walk() method on 21/21 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice instance.
@@ -6162,13 +6001,10 @@ func (me *XsdGoPkgHasElems_InvoicesequenceTxsdSourceDocumentsSequenceSalesInvoic
 }
 
 type TxsdSourceDocumentsSequenceSalesInvoices struct {
-	XsdGoPkgHasElem_NumberOfEntries
-
-	XsdGoPkgHasElem_TotalDebit
-
-	XsdGoPkgHasElem_TotalCredit
-
-	XsdGoPkgHasElems_InvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Invoice_TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice_
+	XsdGoPkgHasElem_NumberOfEntries `bson:"inline"`
+	XsdGoPkgHasElem_TotalDebit `bson:"inline"`
+	XsdGoPkgHasElem_TotalCredit `bson:"inline"`
+	XsdGoPkgHasElems_InvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Invoice_TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceSalesInvoices function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceSalesInvoices instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceSalesInvoices instance.
@@ -6225,13 +6061,10 @@ func (me *XsdGoPkgHasElem_SalesInvoicessequenceTxsdSourceDocumentsSourceDocument
 }
 
 type TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentTotals struct {
-	XsdGoPkgHasElem_TaxPayable
-
-	XsdGoPkgHasElem_NetTotal
-
-	XsdGoPkgHasElem_GrossTotal
-
-	XsdGoPkgHasElem_CurrencysequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Currency_TCurrency_
+	XsdGoPkgHasElem_TaxPayable `bson:"inline"`
+	XsdGoPkgHasElem_NetTotal `bson:"inline"`
+	XsdGoPkgHasElem_GrossTotal `bson:"inline"`
+	XsdGoPkgHasElem_CurrencysequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Currency_TCurrency_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentTotals function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentTotals instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentTotals instance.
@@ -6449,13 +6282,10 @@ func (me *XsdGoPkgHasElem_TaxCodesequenceMovementTaxschema_TaxCode_TSAFTPTMoveme
 }
 
 type TMovementTax struct {
-	XsdGoPkgHasElem_TaxTypesequenceMovementTaxschema_TaxType_TSAFTPTMovementTaxType_
-
-	XsdGoPkgHasElem_TaxCountryRegion
-
-	XsdGoPkgHasElem_TaxCodesequenceMovementTaxschema_TaxCode_TSAFTPTMovementTaxCode_
-
-	XsdGoPkgHasElem_TaxPercentage
+	XsdGoPkgHasElem_TaxTypesequenceMovementTaxschema_TaxType_TSAFTPTMovementTaxType_ `bson:"inline"`
+	XsdGoPkgHasElem_TaxCountryRegion `bson:"inline"`
+	XsdGoPkgHasElem_TaxCodesequenceMovementTaxschema_TaxCode_TSAFTPTMovementTaxCode_ `bson:"inline"`
+	XsdGoPkgHasElem_TaxPercentage `bson:"inline"`
 }
 
 //	If the WalkHandlers.TMovementTax function is not nil (ie. was set by outside code), calls it with this TMovementTax instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TMovementTax instance.
@@ -6512,37 +6342,22 @@ func (me *XsdGoPkgHasElem_TaxsequenceTxsdSourceDocumentsSequenceMovementOfGoodsS
 }
 
 type TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceLine struct {
-	XsdGoPkgHasElems_OrderReferencessequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_OrderReferences_TOrderReferences_
-
-	XsdGoPkgHasElem_ProductCode
-
-	XsdGoPkgHasElem_Quantity
-
-	XsdGoPkgHasElem_TaxsequenceTxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceLineLinesequenceTxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementStockMovementsequenceTxsdSourceDocumentsSequenceMovementOfGoodsMovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_Tax_TMovementTax_
-
-	XsdGoPkgHasElem_DebitAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLineDebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitAmount_TSAFmonetaryType_
-
-	XsdGoPkgHasElem_SettlementAmount
-
-	XsdGoPkgHasElem_CreditAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLineCreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditAmount_TSAFmonetaryType_
-
-	XsdGoPkgHasElem_LineNumber
-
-	XsdGoPkgHasElem_UnitOfMeasure
-
-	XsdGoPkgHasElem_Description
-
-	XsdGoPkgHasElem_ProductSerialNumbersequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_ProductSerialNumber_TProductSerialNumber_
-
-	XsdGoPkgHasElem_TaxExemptionCode
-
-	XsdGoPkgHasElem_CustomsInformationsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_CustomsInformation_TCustomsInformation_
-
-	XsdGoPkgHasElem_ProductDescription
-
-	XsdGoPkgHasElem_UnitPrice
-
-	XsdGoPkgHasElem_TaxExemptionReason
+	XsdGoPkgHasElems_OrderReferencessequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_OrderReferences_TOrderReferences_ `bson:"inline"`
+	XsdGoPkgHasElem_ProductCode `bson:"inline"`
+	XsdGoPkgHasElem_Quantity `bson:"inline"`
+	XsdGoPkgHasElem_TaxsequenceTxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceLineLinesequenceTxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementStockMovementsequenceTxsdSourceDocumentsSequenceMovementOfGoodsMovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_Tax_TMovementTax_ `bson:"inline"`
+	XsdGoPkgHasElem_DebitAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLineDebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitAmount_TSAFmonetaryType_ `bson:"inline"`
+	XsdGoPkgHasElem_SettlementAmount `bson:"inline"`
+	XsdGoPkgHasElem_CreditAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLineCreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditAmount_TSAFmonetaryType_ `bson:"inline"`
+	XsdGoPkgHasElem_LineNumber `bson:"inline"`
+	XsdGoPkgHasElem_UnitOfMeasure `bson:"inline"`
+	XsdGoPkgHasElem_Description `bson:"inline"`
+	XsdGoPkgHasElem_ProductSerialNumbersequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_ProductSerialNumber_TProductSerialNumber_ `bson:"inline"`
+	XsdGoPkgHasElem_TaxExemptionCode `bson:"inline"`
+	XsdGoPkgHasElem_CustomsInformationsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_CustomsInformation_TCustomsInformation_ `bson:"inline"`
+	XsdGoPkgHasElem_ProductDescription `bson:"inline"`
+	XsdGoPkgHasElem_UnitPrice `bson:"inline"`
+	XsdGoPkgHasElem_TaxExemptionReason `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceLine function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceLine instance as the single argument. Then calls the Walk() method on 16/16 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceLine instance.
@@ -6728,15 +6543,11 @@ func (me *XsdGoPkgHasElem_MovementStatusDate) Walk() (err error) {
 }
 
 type TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentStatus struct {
-	XsdGoPkgHasElem_MovementStatus
-
-	XsdGoPkgHasElem_MovementStatusDate
-
-	XsdGoPkgHasElem_Reason
-
-	XsdGoPkgHasElem_SourceID
-
-	XsdGoPkgHasElem_SourceBillingsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatusDocumentStatussequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_SourceBilling_TSAFTPTSourceBilling_
+	XsdGoPkgHasElem_MovementStatus `bson:"inline"`
+	XsdGoPkgHasElem_MovementStatusDate `bson:"inline"`
+	XsdGoPkgHasElem_Reason `bson:"inline"`
+	XsdGoPkgHasElem_SourceID `bson:"inline"`
+	XsdGoPkgHasElem_SourceBillingsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatusDocumentStatussequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_SourceBilling_TSAFTPTSourceBilling_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentStatus function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentStatus instance as the single argument. Then calls the Walk() method on 5/5 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentStatus instance.
@@ -6817,49 +6628,28 @@ func (me *XsdGoPkgHasElem_MovementDate) Walk() (err error) {
 }
 
 type TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovement struct {
-	XsdGoPkgHasElem_TransactionID
-
-	XsdGoPkgHasElem_SourceID
-
-	XsdGoPkgHasElem_ShipTo
-
-	XsdGoPkgHasElem_CustomerID
-
-	XsdGoPkgHasElem_DocumentStatussequenceTxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementStockMovementsequenceTxsdSourceDocumentsSequenceMovementOfGoodsMovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentStatus_TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentStatus_
-
-	XsdGoPkgHasElem_HashControl
-
-	XsdGoPkgHasElem_Period
-
-	XsdGoPkgHasElem_SystemEntryDate
-
-	XsdGoPkgHasElem_MovementStartTime
-
-	XsdGoPkgHasElem_MovementDate
-
-	XsdGoPkgHasElem_ShipFrom
-
-	XsdGoPkgHasElem_MovementEndTime
-
-	XsdGoPkgHasElem_SupplierID
-
-	XsdGoPkgHasElem_Atcud
-
-	XsdGoPkgHasElem_DocumentTotalssequenceTxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementStockMovementsequenceTxsdSourceDocumentsSequenceMovementOfGoodsMovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentTotals_TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentTotals_
-
-	XsdGoPkgHasElem_ATDocCodeID
-
-	XsdGoPkgHasElems_LinesequenceTxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementStockMovementsequenceTxsdSourceDocumentsSequenceMovementOfGoodsMovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_Line_TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceLine_
-
-	XsdGoPkgHasElem_DocumentNumber
-
-	XsdGoPkgHasElem_Hash
-
-	XsdGoPkgHasElem_MovementType
-
-	XsdGoPkgHasElem_EACCode
-
-	XsdGoPkgHasElem_MovementComments
+	XsdGoPkgHasElem_TransactionID `bson:"inline"`
+	XsdGoPkgHasElem_SourceID `bson:"inline"`
+	XsdGoPkgHasElem_ShipTo `bson:"inline"`
+	XsdGoPkgHasElem_CustomerID `bson:"inline"`
+	XsdGoPkgHasElem_DocumentStatussequenceTxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementStockMovementsequenceTxsdSourceDocumentsSequenceMovementOfGoodsMovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentStatus_TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentStatus_ `bson:"inline"`
+	XsdGoPkgHasElem_HashControl `bson:"inline"`
+	XsdGoPkgHasElem_Period `bson:"inline"`
+	XsdGoPkgHasElem_SystemEntryDate `bson:"inline"`
+	XsdGoPkgHasElem_MovementStartTime `bson:"inline"`
+	XsdGoPkgHasElem_MovementDate `bson:"inline"`
+	XsdGoPkgHasElem_ShipFrom `bson:"inline"`
+	XsdGoPkgHasElem_MovementEndTime `bson:"inline"`
+	XsdGoPkgHasElem_SupplierID `bson:"inline"`
+	XsdGoPkgHasElem_Atcud `bson:"inline"`
+	XsdGoPkgHasElem_DocumentTotalssequenceTxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementStockMovementsequenceTxsdSourceDocumentsSequenceMovementOfGoodsMovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentTotals_TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceDocumentTotals_ `bson:"inline"`
+	XsdGoPkgHasElem_ATDocCodeID `bson:"inline"`
+	XsdGoPkgHasElems_LinesequenceTxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementStockMovementsequenceTxsdSourceDocumentsSequenceMovementOfGoodsMovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_Line_TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovementSequenceLine_ `bson:"inline"`
+	XsdGoPkgHasElem_DocumentNumber `bson:"inline"`
+	XsdGoPkgHasElem_Hash `bson:"inline"`
+	XsdGoPkgHasElem_MovementType `bson:"inline"`
+	XsdGoPkgHasElem_EACCode `bson:"inline"`
+	XsdGoPkgHasElem_MovementComments `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovement function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovement instance as the single argument. Then calls the Walk() method on 22/22 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovement instance.
@@ -7014,11 +6804,9 @@ func (me *XsdGoPkgHasElem_TotalQuantityIssued) Walk() (err error) {
 }
 
 type TxsdSourceDocumentsSequenceMovementOfGoods struct {
-	XsdGoPkgHasElem_NumberOfMovementLines
-
-	XsdGoPkgHasElem_TotalQuantityIssued
-
-	XsdGoPkgHasElems_StockMovementsequenceTxsdSourceDocumentsSequenceMovementOfGoodsMovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_StockMovement_TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovement_
+	XsdGoPkgHasElem_NumberOfMovementLines `bson:"inline"`
+	XsdGoPkgHasElem_TotalQuantityIssued `bson:"inline"`
+	XsdGoPkgHasElems_StockMovementsequenceTxsdSourceDocumentsSequenceMovementOfGoodsMovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_StockMovement_TxsdSourceDocumentsSequenceMovementOfGoodsSequenceStockMovement_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceMovementOfGoods function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceMovementOfGoods instance as the single argument. Then calls the Walk() method on 3/3 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceMovementOfGoods instance.
@@ -7136,15 +6924,11 @@ func (me *XsdGoPkgHasElem_WorkStatus) Walk() (err error) {
 }
 
 type TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentStatus struct {
-	XsdGoPkgHasElem_WorkStatus
-
-	XsdGoPkgHasElem_WorkStatusDate
-
-	XsdGoPkgHasElem_Reason
-
-	XsdGoPkgHasElem_SourceID
-
-	XsdGoPkgHasElem_SourceBillingsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatusDocumentStatussequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_SourceBilling_TSAFTPTSourceBilling_
+	XsdGoPkgHasElem_WorkStatus `bson:"inline"`
+	XsdGoPkgHasElem_WorkStatusDate `bson:"inline"`
+	XsdGoPkgHasElem_Reason `bson:"inline"`
+	XsdGoPkgHasElem_SourceID `bson:"inline"`
+	XsdGoPkgHasElem_SourceBillingsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentStatusDocumentStatussequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_SourceBilling_TSAFTPTSourceBilling_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentStatus function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentStatus instance as the single argument. Then calls the Walk() method on 5/5 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentStatus instance.
@@ -7204,13 +6988,10 @@ func (me *XsdGoPkgHasElem_DocumentStatussequenceTxsdSourceDocumentsSequenceWorki
 }
 
 type TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentTotals struct {
-	XsdGoPkgHasElem_GrossTotal
-
-	XsdGoPkgHasElem_CurrencysequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Currency_TCurrency_
-
-	XsdGoPkgHasElem_TaxPayable
-
-	XsdGoPkgHasElem_NetTotal
+	XsdGoPkgHasElem_GrossTotal `bson:"inline"`
+	XsdGoPkgHasElem_CurrencysequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Currency_TCurrency_ `bson:"inline"`
+	XsdGoPkgHasElem_TaxPayable `bson:"inline"`
+	XsdGoPkgHasElem_NetTotal `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentTotals function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentTotals instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentTotals instance.
@@ -7267,41 +7048,24 @@ func (me *XsdGoPkgHasElem_DocumentTotalssequenceTxsdSourceDocumentsSequenceWorki
 }
 
 type TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceLine struct {
-	XsdGoPkgHasElem_UnitPrice
-
-	XsdGoPkgHasElem_TaxExemptionReason
-
-	XsdGoPkgHasElem_LineNumber
-
-	XsdGoPkgHasElem_TaxBase
-
-	XsdGoPkgHasElem_TaxPointDate
-
-	XsdGoPkgHasElem_Description
-
-	XsdGoPkgHasElem_ProductSerialNumbersequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_ProductSerialNumber_TProductSerialNumber_
-
-	XsdGoPkgHasElem_ProductCode
-
-	XsdGoPkgHasElems_OrderReferencessequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_OrderReferences_TOrderReferences_
-
-	XsdGoPkgHasElem_ProductDescription
-
-	XsdGoPkgHasElem_TaxsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Tax_Tax_
-
-	XsdGoPkgHasElem_CustomsInformationsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_CustomsInformation_TCustomsInformation_
-
-	XsdGoPkgHasElem_DebitAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLineDebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitAmount_TSAFmonetaryType_
-
-	XsdGoPkgHasElem_Quantity
-
-	XsdGoPkgHasElem_UnitOfMeasure
-
-	XsdGoPkgHasElem_TaxExemptionCode
-
-	XsdGoPkgHasElem_SettlementAmount
-
-	XsdGoPkgHasElem_CreditAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLineCreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditAmount_TSAFmonetaryType_
+	XsdGoPkgHasElem_UnitPrice `bson:"inline"`
+	XsdGoPkgHasElem_TaxExemptionReason `bson:"inline"`
+	XsdGoPkgHasElem_LineNumber `bson:"inline"`
+	XsdGoPkgHasElem_TaxBase `bson:"inline"`
+	XsdGoPkgHasElem_TaxPointDate `bson:"inline"`
+	XsdGoPkgHasElem_Description `bson:"inline"`
+	XsdGoPkgHasElem_ProductSerialNumbersequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_ProductSerialNumber_TProductSerialNumber_ `bson:"inline"`
+	XsdGoPkgHasElem_ProductCode `bson:"inline"`
+	XsdGoPkgHasElems_OrderReferencessequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_OrderReferences_TOrderReferences_ `bson:"inline"`
+	XsdGoPkgHasElem_ProductDescription `bson:"inline"`
+	XsdGoPkgHasElem_TaxsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Tax_Tax_ `bson:"inline"`
+	XsdGoPkgHasElem_CustomsInformationsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceLineLinesequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_CustomsInformation_TCustomsInformation_ `bson:"inline"`
+	XsdGoPkgHasElem_DebitAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLineDebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitAmount_TSAFmonetaryType_ `bson:"inline"`
+	XsdGoPkgHasElem_Quantity `bson:"inline"`
+	XsdGoPkgHasElem_UnitOfMeasure `bson:"inline"`
+	XsdGoPkgHasElem_TaxExemptionCode `bson:"inline"`
+	XsdGoPkgHasElem_SettlementAmount `bson:"inline"`
+	XsdGoPkgHasElem_CreditAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLineCreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditAmount_TSAFmonetaryType_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceLine function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceLine instance as the single argument. Then calls the Walk() method on 18/18 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceLine instance.
@@ -7499,35 +7263,21 @@ func (me *XsdGoPkgHasElem_WorkType) Walk() (err error) {
 }
 
 type TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocument struct {
-	XsdGoPkgHasElem_Atcud
-
-	XsdGoPkgHasElem_HashControl
-
-	XsdGoPkgHasElem_WorkDate
-
-	XsdGoPkgHasElem_CustomerID
-
-	XsdGoPkgHasElem_Hash
-
-	XsdGoPkgHasElem_Period
-
-	XsdGoPkgHasElem_WorkType
-
-	XsdGoPkgHasElem_DocumentNumber
-
-	XsdGoPkgHasElem_DocumentStatussequenceTxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentWorkDocumentsequenceTxsdSourceDocumentsSequenceWorkingDocumentsWorkingDocumentssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentStatus_TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentStatus_
-
-	XsdGoPkgHasElem_SourceID
-
-	XsdGoPkgHasElem_SystemEntryDate
-
-	XsdGoPkgHasElem_TransactionID
-
-	XsdGoPkgHasElem_DocumentTotalssequenceTxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentWorkDocumentsequenceTxsdSourceDocumentsSequenceWorkingDocumentsWorkingDocumentssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentTotals_TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentTotals_
-
-	XsdGoPkgHasElem_EACCode
-
-	XsdGoPkgHasElems_LinesequenceTxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentWorkDocumentsequenceTxsdSourceDocumentsSequenceWorkingDocumentsWorkingDocumentssequenceTxsdSourceDocumentsSourceDocumentsschema_Line_TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceLine_
+	XsdGoPkgHasElem_Atcud `bson:"inline"`
+	XsdGoPkgHasElem_HashControl `bson:"inline"`
+	XsdGoPkgHasElem_WorkDate `bson:"inline"`
+	XsdGoPkgHasElem_CustomerID `bson:"inline"`
+	XsdGoPkgHasElem_Hash `bson:"inline"`
+	XsdGoPkgHasElem_Period `bson:"inline"`
+	XsdGoPkgHasElem_WorkType `bson:"inline"`
+	XsdGoPkgHasElem_DocumentNumber `bson:"inline"`
+	XsdGoPkgHasElem_DocumentStatussequenceTxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentWorkDocumentsequenceTxsdSourceDocumentsSequenceWorkingDocumentsWorkingDocumentssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentStatus_TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentStatus_ `bson:"inline"`
+	XsdGoPkgHasElem_SourceID `bson:"inline"`
+	XsdGoPkgHasElem_SystemEntryDate `bson:"inline"`
+	XsdGoPkgHasElem_TransactionID `bson:"inline"`
+	XsdGoPkgHasElem_DocumentTotalssequenceTxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentWorkDocumentsequenceTxsdSourceDocumentsSequenceWorkingDocumentsWorkingDocumentssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentTotals_TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceDocumentTotals_ `bson:"inline"`
+	XsdGoPkgHasElem_EACCode `bson:"inline"`
+	XsdGoPkgHasElems_LinesequenceTxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentWorkDocumentsequenceTxsdSourceDocumentsSequenceWorkingDocumentsWorkingDocumentssequenceTxsdSourceDocumentsSourceDocumentsschema_Line_TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocumentSequenceLine_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocument function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocument instance as the single argument. Then calls the Walk() method on 15/15 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocument instance.
@@ -7619,13 +7369,10 @@ func (me *XsdGoPkgHasElems_WorkDocumentsequenceTxsdSourceDocumentsSequenceWorkin
 }
 
 type TxsdSourceDocumentsSequenceWorkingDocuments struct {
-	XsdGoPkgHasElem_NumberOfEntries
-
-	XsdGoPkgHasElem_TotalDebit
-
-	XsdGoPkgHasElem_TotalCredit
-
-	XsdGoPkgHasElems_WorkDocumentsequenceTxsdSourceDocumentsSequenceWorkingDocumentsWorkingDocumentssequenceTxsdSourceDocumentsSourceDocumentsschema_WorkDocument_TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocument_
+	XsdGoPkgHasElem_NumberOfEntries `bson:"inline"`
+	XsdGoPkgHasElem_TotalDebit `bson:"inline"`
+	XsdGoPkgHasElem_TotalCredit `bson:"inline"`
+	XsdGoPkgHasElems_WorkDocumentsequenceTxsdSourceDocumentsSequenceWorkingDocumentsWorkingDocumentssequenceTxsdSourceDocumentsSourceDocumentsschema_WorkDocument_TxsdSourceDocumentsSequenceWorkingDocumentsSequenceWorkDocument_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequenceWorkingDocuments function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequenceWorkingDocuments instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequenceWorkingDocuments instance.
@@ -7845,15 +7592,11 @@ func (me *XsdGoPkgHasElem_SourcePaymentsequenceTxsdSourceDocumentsSequencePaymen
 }
 
 type TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentStatus struct {
-	XsdGoPkgHasElem_PaymentStatus
-
-	XsdGoPkgHasElem_PaymentStatusDate
-
-	XsdGoPkgHasElem_Reason
-
-	XsdGoPkgHasElem_SourceID
-
-	XsdGoPkgHasElem_SourcePaymentsequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentStatusDocumentStatussequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_SourcePayment_TSAFTPTSourcePayment_
+	XsdGoPkgHasElem_PaymentStatus `bson:"inline"`
+	XsdGoPkgHasElem_PaymentStatusDate `bson:"inline"`
+	XsdGoPkgHasElem_Reason `bson:"inline"`
+	XsdGoPkgHasElem_SourceID `bson:"inline"`
+	XsdGoPkgHasElem_SourcePaymentsequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentStatusDocumentStatussequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_SourcePayment_TSAFTPTSourcePayment_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentStatus function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentStatus instance as the single argument. Then calls the Walk() method on 5/5 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentStatus instance.
@@ -7939,7 +7682,7 @@ func (me *XsdGoPkgHasElems_PaymentMethodsequenceTxsdSourceDocumentsSequencePayme
 }
 
 type TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotalsSequenceSettlement struct {
-	XsdGoPkgHasElem_SettlementAmount
+	XsdGoPkgHasElem_SettlementAmount `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotalsSequenceSettlement function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotalsSequenceSettlement instance as the single argument. Then calls the Walk() method on 1/1 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotalsSequenceSettlement instance.
@@ -7987,15 +7730,11 @@ func (me *XsdGoPkgHasElem_SettlementsequenceTxsdSourceDocumentsSequencePaymentsS
 }
 
 type TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotals struct {
-	XsdGoPkgHasElem_SettlementsequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_Settlement_TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotalsSequenceSettlement_
-
-	XsdGoPkgHasElem_CurrencysequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Currency_TCurrency_
-
-	XsdGoPkgHasElem_TaxPayable
-
-	XsdGoPkgHasElem_NetTotal
-
-	XsdGoPkgHasElem_GrossTotal
+	XsdGoPkgHasElem_SettlementsequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_Settlement_TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotalsSequenceSettlement_ `bson:"inline"`
+	XsdGoPkgHasElem_CurrencysequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceSequenceDocumentTotalsDocumentTotalssequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_Currency_TCurrency_ `bson:"inline"`
+	XsdGoPkgHasElem_TaxPayable `bson:"inline"`
+	XsdGoPkgHasElem_NetTotal `bson:"inline"`
+	XsdGoPkgHasElem_GrossTotal `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotals function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotals instance as the single argument. Then calls the Walk() method on 5/5 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotals instance.
@@ -8076,11 +7815,9 @@ func (me *XsdGoPkgHasElem_SystemID) Walk() (err error) {
 }
 
 type TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLineSequenceSourceDocumentID struct {
-	XsdGoPkgHasElem_OriginatingON
-
-	XsdGoPkgHasElem_InvoiceDate
-
-	XsdGoPkgHasElem_Description
+	XsdGoPkgHasElem_OriginatingON `bson:"inline"`
+	XsdGoPkgHasElem_InvoiceDate `bson:"inline"`
+	XsdGoPkgHasElem_Description `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLineSequenceSourceDocumentID function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLineSequenceSourceDocumentID instance as the single argument. Then calls the Walk() method on 3/3 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLineSequenceSourceDocumentID instance.
@@ -8168,15 +7905,11 @@ func (me *XsdGoPkgHasElem_TaxCodesequencePaymentTaxschema_TaxCode_TPaymentTaxCod
 }
 
 type TPaymentTax struct {
-	XsdGoPkgHasElem_TaxCountryRegion
-
-	XsdGoPkgHasElem_TaxCodesequencePaymentTaxschema_TaxCode_TPaymentTaxCode_
-
-	XsdGoPkgHasElem_TaxPercentage
-
-	XsdGoPkgHasElem_TaxAmount
-
-	XsdGoPkgHasElem_TaxType
+	XsdGoPkgHasElem_TaxCountryRegion `bson:"inline"`
+	XsdGoPkgHasElem_TaxCodesequencePaymentTaxschema_TaxCode_TPaymentTaxCode_ `bson:"inline"`
+	XsdGoPkgHasElem_TaxPercentage `bson:"inline"`
+	XsdGoPkgHasElem_TaxAmount `bson:"inline"`
+	XsdGoPkgHasElem_TaxType `bson:"inline"`
 }
 
 //	If the WalkHandlers.TPaymentTax function is not nil (ie. was set by outside code), calls it with this TPaymentTax instance as the single argument. Then calls the Walk() method on 5/5 embed(s) and 0/0 field(s) belonging to this TPaymentTax instance.
@@ -8236,21 +7969,14 @@ func (me *XsdGoPkgHasElem_TaxsequenceTxsdSourceDocumentsSequencePaymentsSequence
 }
 
 type TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLine struct {
-	XsdGoPkgHasElem_DebitAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLineDebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitAmount_TSAFmonetaryType_
-
-	XsdGoPkgHasElem_CreditAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLineCreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditAmount_TSAFmonetaryType_
-
-	XsdGoPkgHasElem_LineNumber
-
-	XsdGoPkgHasElems_SourceDocumentIDsequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLineLinesequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_SourceDocumentID_TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLineSequenceSourceDocumentID_
-
-	XsdGoPkgHasElem_SettlementAmount
-
-	XsdGoPkgHasElem_TaxsequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLineLinesequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_Tax_TPaymentTax_
-
-	XsdGoPkgHasElem_TaxExemptionReason
-
-	XsdGoPkgHasElem_TaxExemptionCode
+	XsdGoPkgHasElem_DebitAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllDebitLineDebitLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_DebitAmount_TSAFmonetaryType_ `bson:"inline"`
+	XsdGoPkgHasElem_CreditAmountsequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesAllCreditLineCreditLineallTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionSequenceLinesLinessequenceTxsdGeneralLedgerEntriesSequenceJournalSequenceTransactionTransactionsequenceTxsdGeneralLedgerEntriesSequenceJournalJournalsequenceTxsdGeneralLedgerEntriesGeneralLedgerEntriesschema_CreditAmount_TSAFmonetaryType_ `bson:"inline"`
+	XsdGoPkgHasElem_LineNumber `bson:"inline"`
+	XsdGoPkgHasElems_SourceDocumentIDsequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLineLinesequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_SourceDocumentID_TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLineSequenceSourceDocumentID_ `bson:"inline"`
+	XsdGoPkgHasElem_SettlementAmount `bson:"inline"`
+	XsdGoPkgHasElem_TaxsequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLineLinesequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_Tax_TPaymentTax_ `bson:"inline"`
+	XsdGoPkgHasElem_TaxExemptionReason `bson:"inline"`
+	XsdGoPkgHasElem_TaxExemptionCode `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLine function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLine instance as the single argument. Then calls the Walk() method on 8/8 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLine instance.
@@ -8321,37 +8047,22 @@ func (me *XsdGoPkgHasElems_LinesequenceTxsdSourceDocumentsSequencePaymentsSequen
 }
 
 type TxsdSourceDocumentsSequencePaymentsSequencePayment struct {
-	XsdGoPkgHasElem_Period
-
-	XsdGoPkgHasElem_TransactionDate
-
-	XsdGoPkgHasElem_PaymentTypesequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_PaymentType_TSAFTPTPaymentType_
-
-	XsdGoPkgHasElem_PaymentRefNo
-
-	XsdGoPkgHasElem_TransactionID
-
-	XsdGoPkgHasElem_DocumentStatussequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentStatus_TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentStatus_
-
-	XsdGoPkgHasElems_PaymentMethodsequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_PaymentMethod_TPaymentMethod_
-
-	XsdGoPkgHasElem_CustomerID
-
-	XsdGoPkgHasElem_DocumentTotalssequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentTotals_TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotals_
-
-	XsdGoPkgHasElem_Atcud
-
-	XsdGoPkgHasElem_Description
-
-	XsdGoPkgHasElem_SystemID
-
-	XsdGoPkgHasElems_LinesequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_Line_TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLine_
-
-	XsdGoPkgHasElem_SourceID
-
-	XsdGoPkgHasElem_SystemEntryDate
-
-	XsdGoPkgHasElems_WithholdingTaxsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_WithholdingTax_TWithholdingTax_
+	XsdGoPkgHasElem_Period `bson:"inline"`
+	XsdGoPkgHasElem_TransactionDate `bson:"inline"`
+	XsdGoPkgHasElem_PaymentTypesequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_PaymentType_TSAFTPTPaymentType_ `bson:"inline"`
+	XsdGoPkgHasElem_PaymentRefNo `bson:"inline"`
+	XsdGoPkgHasElem_TransactionID `bson:"inline"`
+	XsdGoPkgHasElem_DocumentStatussequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentStatus_TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentStatus_ `bson:"inline"`
+	XsdGoPkgHasElems_PaymentMethodsequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_PaymentMethod_TPaymentMethod_ `bson:"inline"`
+	XsdGoPkgHasElem_CustomerID `bson:"inline"`
+	XsdGoPkgHasElem_DocumentTotalssequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_DocumentTotals_TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceDocumentTotals_ `bson:"inline"`
+	XsdGoPkgHasElem_Atcud `bson:"inline"`
+	XsdGoPkgHasElem_Description `bson:"inline"`
+	XsdGoPkgHasElem_SystemID `bson:"inline"`
+	XsdGoPkgHasElems_LinesequenceTxsdSourceDocumentsSequencePaymentsSequencePaymentPaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_Line_TxsdSourceDocumentsSequencePaymentsSequencePaymentSequenceLine_ `bson:"inline"`
+	XsdGoPkgHasElem_SourceID `bson:"inline"`
+	XsdGoPkgHasElem_SystemEntryDate `bson:"inline"`
+	XsdGoPkgHasElems_WithholdingTaxsequenceTxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoiceInvoicesequenceTxsdSourceDocumentsSequenceSalesInvoicesSalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_WithholdingTax_TWithholdingTax_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequencePaymentsSequencePayment function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequencePaymentsSequencePayment instance as the single argument. Then calls the Walk() method on 16/16 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequencePaymentsSequencePayment instance.
@@ -8446,13 +8157,10 @@ func (me *XsdGoPkgHasElems_PaymentsequenceTxsdSourceDocumentsSequencePaymentsPay
 }
 
 type TxsdSourceDocumentsSequencePayments struct {
-	XsdGoPkgHasElems_PaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_Payment_TxsdSourceDocumentsSequencePaymentsSequencePayment_
-
-	XsdGoPkgHasElem_NumberOfEntries
-
-	XsdGoPkgHasElem_TotalDebit
-
-	XsdGoPkgHasElem_TotalCredit
+	XsdGoPkgHasElems_PaymentsequenceTxsdSourceDocumentsSequencePaymentsPaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_Payment_TxsdSourceDocumentsSequencePaymentsSequencePayment_ `bson:"inline"`
+	XsdGoPkgHasElem_NumberOfEntries `bson:"inline"`
+	XsdGoPkgHasElem_TotalDebit `bson:"inline"`
+	XsdGoPkgHasElem_TotalCredit `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocumentsSequencePayments function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocumentsSequencePayments instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocumentsSequencePayments instance.
@@ -8509,13 +8217,10 @@ func (me *XsdGoPkgHasElem_PaymentssequenceTxsdSourceDocumentsSourceDocumentssche
 }
 
 type TxsdSourceDocuments struct {
-	XsdGoPkgHasElem_SalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_SalesInvoices_TxsdSourceDocumentsSequenceSalesInvoices_
-
-	XsdGoPkgHasElem_MovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_MovementOfGoods_TxsdSourceDocumentsSequenceMovementOfGoods_
-
-	XsdGoPkgHasElem_WorkingDocumentssequenceTxsdSourceDocumentsSourceDocumentsschema_WorkingDocuments_TxsdSourceDocumentsSequenceWorkingDocuments_
-
-	XsdGoPkgHasElem_PaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_Payments_TxsdSourceDocumentsSequencePayments_
+	XsdGoPkgHasElem_SalesInvoicessequenceTxsdSourceDocumentsSourceDocumentsschema_SalesInvoices_TxsdSourceDocumentsSequenceSalesInvoices_ `bson:"inline"`
+	XsdGoPkgHasElem_MovementOfGoodssequenceTxsdSourceDocumentsSourceDocumentsschema_MovementOfGoods_TxsdSourceDocumentsSequenceMovementOfGoods_ `bson:"inline"`
+	XsdGoPkgHasElem_WorkingDocumentssequenceTxsdSourceDocumentsSourceDocumentsschema_WorkingDocuments_TxsdSourceDocumentsSequenceWorkingDocuments_ `bson:"inline"`
+	XsdGoPkgHasElem_PaymentssequenceTxsdSourceDocumentsSourceDocumentsschema_Payments_TxsdSourceDocumentsSequencePayments_ `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdSourceDocuments function is not nil (ie. was set by outside code), calls it with this TxsdSourceDocuments instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TxsdSourceDocuments instance.
@@ -8572,13 +8277,10 @@ func (me *XsdGoPkgHasElem_SourceDocuments) Walk() (err error) {
 }
 
 type TxsdAuditFile struct {
-	XsdGoPkgHasElem_Header
-
-	XsdGoPkgHasElem_MasterFilessequenceTxsdAuditFileAuditFileschema_MasterFiles_TxsdAuditFileSequenceMasterFiles_
-
-	XsdGoPkgHasElem_GeneralLedgerEntries
-
-	XsdGoPkgHasElem_SourceDocuments
+	XsdGoPkgHasElem_Header `bson:"inline"`
+	XsdGoPkgHasElem_MasterFilessequenceTxsdAuditFileAuditFileschema_MasterFiles_TxsdAuditFileSequenceMasterFiles_ `bson:"inline"`
+	XsdGoPkgHasElem_GeneralLedgerEntries `bson:"inline"`
+	XsdGoPkgHasElem_SourceDocuments `bson:"inline"`
 }
 
 //	If the WalkHandlers.TxsdAuditFile function is not nil (ie. was set by outside code), calls it with this TxsdAuditFile instance as the single argument. Then calls the Walk() method on 4/4 embed(s) and 0/0 field(s) belonging to this TxsdAuditFile instance.

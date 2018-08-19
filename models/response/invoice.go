@@ -7,18 +7,18 @@ import (
 
 type Invoice struct {
 	ID                 objectid.ObjectID `json:"id,omitempty" bson:"_id"`
-	go_SaftT104.TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice
+	go_SaftT104.TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice `bson:"inline"`
 }
 
 type InvoiceCreate struct {
 	ID string `json:"id,omitempty"`
-	go_SaftT104.TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice
+	go_SaftT104.TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice `bson:"inline"`
 }
 
 type InvoiceRead struct {
 	ID                 string            `json:"id,omitempty"`
 	IDdb               objectid.ObjectID `json:"-" bson:"_id"`
-	go_SaftT104.TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice
+	go_SaftT104.TxsdSourceDocumentsSequenceSalesInvoicesSequenceInvoice `bson:"inline"`
 }
 
 type InvoiceList struct {

@@ -8,7 +8,6 @@ import (
 	"invoices/util/errors"
 
 	"log"
-	"github.com/mongodb/mongo-go-driver/bson"
 	"github.com/mongodb/mongo-go-driver/bson/objectid"
 	"github.com/mongodb/mongo-go-driver/mongo"
 )
@@ -77,11 +76,6 @@ func (this *InvoiceService) DeleteOne(p *mrequest.InvoiceDelete) (*mresponse.Inv
 // CreateMany saves many Invoices in one bulk operation
 func (this *InvoiceService) CreateMany(request *[]*mrequest.InvoiceCreate) (*[]*mresponse.InvoiceCreate, *mresponse.ErrorResponse) {
 
-	x := *request
-	
-	c, _ := bson.Marshal(x[0])
-	log.Println(string(c))
-	
 	res, err := this.InvoiceRepository.InsertMany(request)
 
 	if err != nil {
