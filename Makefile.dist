@@ -32,6 +32,7 @@ run:
 	export AUTO_COMMIT_INTERVAL=5000; \
 	export AUTO_COMMIT_ENABLE=true; \
 	export AUTO_OFFSET_RESET=earliest; \
+	export MESSAGE_MAX_BYTES=5242880; \
 	go run main.go
 
 build: clean

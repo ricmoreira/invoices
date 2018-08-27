@@ -20,12 +20,6 @@
   version = "v0.11.4"
 
 [[projects]]
-  name = "github.com/gin-contrib/cors"
-  packages = ["."]
-  revision = "cf4846e6a636a76237a28d9286f163c132e841bc"
-  version = "v1.2"
-
-[[projects]]
   branch = "master"
   name = "github.com/gin-contrib/sse"
   packages = ["."]
@@ -71,6 +65,12 @@
   packages = ["."]
   revision = "0360b2af4f38e8d38c7fce2a9f4e702702d73a39"
   version = "v0.0.3"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/metaleap/go-xsd"
+  packages = ["types"]
+  revision = "61f7638f502f1fa73ff76e2f2586410687e9314a"
 
 [[projects]]
   name = "github.com/modern-go/concurrent"
@@ -159,11 +159,7 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/crypto"
-  packages = [
-    "bcrypt",
-    "blowfish",
-    "pbkdf2"
-  ]
+  packages = ["pbkdf2"]
   revision = "aabede6cba87e37f413b3e60ebfc214f8eeca1b0"
 
 [[projects]]
@@ -199,6 +195,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "b315c9ca24a05a5fa439efe46e1c0d70d908de9f1e5d9a30324b92b8b811d661"
+  inputs-digest = "38b0269a3caba6967418a1b6e6d2854fe0eb0a71b7801eef339c7ef0cc0ba8b9"
   solver-name = "gps-cdcl"
   solver-version = 1

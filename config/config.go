@@ -24,6 +24,7 @@ var (
 	AUTO_COMMIT_INTERVAL string = "AUTO_COMMIT_INTERVAL"
 	AUTO_COMMIT_ENABLE   string = "AUTO_COMMIT_ENABLE"
 	AUTO_OFFSET_RESET    string = "AUTO_OFFSET_RESET"
+	MESSAGE_MAX_BYTES    string = "MESSAGE_MAX_BYTES"
 )
 
 type Config struct {
@@ -31,6 +32,7 @@ type Config struct {
 	MongoHost         string
 	MongoDatabaseName string
 	*KafkaConsumerConfig
+	MessageMaxBytes int // kafka max message size to send from producer
 }
 
 // KafkaConsumerConfig is the struct that represents Kafka parameters for the Kafka consumer
@@ -53,6 +55,8 @@ type KafkaConsumerConfig struct {
 }
 
 func NewConfig() *Config {
+	i, _ := strconv.Atoi(MustGetEnv(MESSAGE_MAX_BYTES))
+
 	topicsEnv := MustGetEnv(TOPICS_SUBSCRIBED)
 	topics := strings.Split(topicsEnv, ",")
 
@@ -81,10 +85,11 @@ func NewConfig() *Config {
 	}
 
 	return &Config{
-		Host:              MustGetEnv(HOST),
-		MongoHost:         MustGetEnv(MONGO_HOST),
-		MongoDatabaseName: MustGetEnv(MONGO_DATABASE),
-		KafkaConsumerConfig:    kafkaConfig,
+		Host:                MustGetEnv(HOST),
+		MongoHost:           MustGetEnv(MONGO_HOST),
+		MongoDatabaseName:   MustGetEnv(MONGO_DATABASE),
+		KafkaConsumerConfig: kafkaConfig,
+		MessageMaxBytes:     i,
 	}
 }
 

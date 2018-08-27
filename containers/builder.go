@@ -42,6 +42,10 @@ func BuildContainer() *dig.Container {
 	if err != nil {
 		panic(err)
 	}
+	err = container.Provide(services.NewKafkaProducer)
+	if err != nil {
+		panic(err)
+	}
 
 	// controllers
 	err = container.Provide(controllers.NewInvoiceController)
