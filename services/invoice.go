@@ -5,8 +5,8 @@ import (
 	"invoices/models/request"
 	"invoices/models/response"
 	"invoices/repositories"
-	"invoices/util/errors"
 	"invoices/util"
+	"invoices/util/errors"
 
 	"log"
 
@@ -130,10 +130,17 @@ func (this *InvoiceService) List(request *mrequest.ListRequest) (*mresponse.Invo
 		}
 		doc.InvoiceDate = date
 		doc.InvoiceNo = string(dbDoc.InvoiceNo)
-		doc.NetTotal = float64(dbDoc.DocumentTotals.NetTotal)
-		doc.TaxPayable = float64(dbDoc.DocumentTotals.TaxPayable)
-		doc.GrossTotal = float64(dbDoc.DocumentTotals.GrossTotal)
 
+		if dbDoc.DocumentTotals != nil { // TODO: change this to mandatory type check of Invoice doc
+			doc.NetTotal = float64(dbDoc.DocumentTotals.NetTotal)
+			doc.TaxPayable = float64(dbDoc.DocumentTotals.TaxPayable)
+			doc.GrossTotal = float64(dbDoc.DocumentTotals.GrossTotal)
+		} else {
+			doc.NetTotal = float64(0)
+			doc.TaxPayable = float64(0)
+			doc.GrossTotal = float64(0)
+		}
+		
 		docs = append(docs, &doc)
 	}
 
