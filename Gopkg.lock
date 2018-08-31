@@ -55,6 +55,12 @@
   revision = "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
 
 [[projects]]
+  branch = "master"
+  name = "github.com/jinzhu/copier"
+  packages = ["."]
+  revision = "7e38e58719c33e0d44d585c4ab477a30f8cb82dd"
+
+[[projects]]
   name = "github.com/json-iterator/go"
   packages = ["."]
   revision = "1624edc4454b8682399def8740d46db5e4362ba4"
@@ -195,6 +201,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "38b0269a3caba6967418a1b6e6d2854fe0eb0a71b7801eef339c7ef0cc0ba8b9"
+  inputs-digest = "55fa358c8afc56391bbf0ff15d8fa58e2af648ba9e01f05196b468be97c7afb2"
   solver-name = "gps-cdcl"
   solver-version = 1

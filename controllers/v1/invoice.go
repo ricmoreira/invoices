@@ -13,7 +13,7 @@ type (
 	// InvoiceController represents the controller for operating on the invoices resource
 	InvoiceController struct {
 		InvoiceService services.InvoiceServiceContract
-		KafkaProducer  *services.KafkaProducer
+		KafkaProducer  services.KafkaProducerContract
 	}
 )
 
@@ -43,12 +43,12 @@ func (pc InvoiceController) CreateAction(c *gin.Context) {
 		return
 	}
 
-	e = pc.KafkaProducer.SendInvoiceToTopic("invoice", &iReq)
+	e = pc.KafkaProducer.SendInvoiceToTopic("invoice_created", iRes)
 	if e != nil {
 		c.JSON(e.HttpCode, e)
 		return
 	}
-	
+
 	c.JSON(200, iRes)
 }
 

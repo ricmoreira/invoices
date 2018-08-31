@@ -3,7 +3,6 @@ package services
 import (
 	"encoding/json"
 	"invoices/config"
-	"invoices/models/request"
 	"invoices/models/response"
 	"invoices/util/errors"
 	"log"
@@ -16,6 +15,11 @@ import (
 type KafkaProducer struct {
 	prod   *kafka.Producer
 	config *config.Config
+}
+
+type KafkaProducerContract interface {
+	Connect() error
+	SendInvoiceToTopic(topic string, request *mresponse.InvoiceCreate) *mresponse.ErrorResponse
 }
 
 // NewKafkaProducer is the KafkaProducer constructor
@@ -53,7 +57,7 @@ func (kp *KafkaProducer) Connect() error {
 }
 
 // SendInvoiceToTopic sends an invoice to provided topic name
-func (kp *KafkaProducer) SendInvoiceToTopic(topic string, request *mrequest.InvoiceCreate) *mresponse.ErrorResponse {
+func (kp *KafkaProducer) SendInvoiceToTopic(topic string, request *mresponse.InvoiceCreate) *mresponse.ErrorResponse {
 
 	jptBytes, err := json.Marshal(request)
 	if err != nil {

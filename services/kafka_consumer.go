@@ -12,12 +12,14 @@ import (
 type KafkaConsumer struct {
 	config      *config.Config
 	invoiceServ *InvoiceService
+	kafkaProducer *KafkaProducer
 }
 
-func NewKafkaConsumer(config *config.Config, ps *InvoiceService) *KafkaConsumer {
+func NewKafkaConsumer(config *config.Config, ps *InvoiceService, kp *KafkaProducer) *KafkaConsumer {
 	return &KafkaConsumer{
 		config:      config,
 		invoiceServ: ps,
+		kafkaProducer: kp,
 	}
 }
 
@@ -62,11 +64,17 @@ func (kc *KafkaConsumer) Run() {
 					break
 				}
 
-				// save invoices to database
-				_, e := kc.invoiceServ.CreateMany(invoices)
-				if e != nil {
-					log.Printf("Error saving invoices to database\n Error: %s\n", e.Response)
-					break
+				// save each invoice to database and produce message to kafka
+				for _, invoice := range *invoices {
+					inv, e := kc.invoiceServ.CreateOne(invoice) // save invoice to database
+
+					log.Printf("%v",invoice)
+					log.Printf("%v",inv)
+					if e != nil {
+						log.Printf("Error saving invoice to database\n Error: %s\n", e.Response)
+					} else {
+						kc.kafkaProducer.SendInvoiceToTopic("invoice_created", inv) // inform Kafka invoice created
+					}
 				}
 			default: //ignore any other topics
 			}

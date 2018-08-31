@@ -15,6 +15,18 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// stub KafkaProducer behaviour
+type MockKafkaProducer struct{}
+
+func (kp *MockKafkaProducer) Connect() error {
+	// TODO: implement in the future
+	return nil
+}
+func (kp *MockKafkaProducer) SendInvoiceToTopic(topic string, request *mresponse.InvoiceCreate) *mresponse.ErrorResponse {
+	// TODO: implement in the future
+	return nil
+}
+
 // stub InvoiceService behaviour
 type MockInvoiceService struct{}
 
@@ -68,8 +80,11 @@ func TestCreateInvoiceAction(t *testing.T) {
 
 	pps := &MockInvoiceService{}
 
+	kp := &MockKafkaProducer{}
+
 	pc := InvoiceController{
 		InvoiceService: pps,
+		KafkaProducer:  kp,
 	}
 
 	r := gin.Default()
@@ -77,8 +92,6 @@ func TestCreateInvoiceAction(t *testing.T) {
 	r.POST("/api/v1/invoice", pc.CreateAction)
 
 	// TEST SUCCESS
-
-
 
 	// Mock a request
 	body := mrequest.InvoiceCreate{}

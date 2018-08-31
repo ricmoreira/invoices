@@ -12,6 +12,7 @@ import (
 
 	"github.com/mongodb/mongo-go-driver/bson/objectid"
 	"github.com/mongodb/mongo-go-driver/mongo"
+	"github.com/jinzhu/copier"
 )
 
 // InvoiceServiceContract is the abstraction for service layer on roles resource
@@ -53,11 +54,12 @@ func (this *InvoiceService) CreateOne(request *mrequest.InvoiceCreate) (*mrespon
 	}
 
 	id := res.InsertedID.(objectid.ObjectID)
-	p := mresponse.InvoiceCreate{
-		ID: id.Hex(),
-	}
+	
+	ic := mresponse.InvoiceCreate{}
+	copier.Copy(&ic, request)
+	ic.ID = id.Hex()
 
-	return &p, nil
+	return &ic, nil
 }
 
 // TODO: implement
